@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const filtered = searchTerm
       ? countries.filter((country) =>
-          country.name.toLowerCase().includes(searchTerm.toLowerCase()),
+          country.common.toLowerCase().includes(searchTerm.toLowerCase()),
         )
       : countries
 
@@ -44,7 +44,7 @@ function App() {
       </nav>
       <div className="countries-list">
         {filteredCountries.map((country, index) => (
-          <CountryCard key={country.abbr + index} country={country} />
+          <CountryCard key={country.common + index} country={country} />
         ))}
       </div>
     </div>

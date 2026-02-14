@@ -4,11 +4,11 @@ const CountryCard = ({ country }) => {
   return (
     <div className="country-card">
       <img
-        src={country.flag}
-        alt={country.name}
+        src={country.png}
+        alt={country.common}
         style={{ width: "100px", height: "100px" }}
       />
-      <h2>{country.name}</h2>
+      <h2>{country.common}</h2>
     </div>
   )
 }
