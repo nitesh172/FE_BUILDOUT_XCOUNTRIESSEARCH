@@ -2,7 +2,7 @@ import React from "react"
 
 const CountryCard = ({ country }) => {
   return (
-    <div className="country-card">
+    <div className="countryCard">
       <img
         src={country.png}
         alt={country.common}
